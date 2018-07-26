@@ -1,1 +1,1 @@
-# openAPS_GlucoSym_closed_loop_system
+openAPS + GlucoSym Closed Loop System
