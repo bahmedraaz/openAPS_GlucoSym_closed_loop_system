@@ -1,5 +1,5 @@
 var fs = require('fs');
-var request = require("sync-request");
+var request = require("then-request");
 var micro=0.000001;
 
 
@@ -71,12 +71,19 @@ var postdata={dose:ID[0],dt:dt,index:0,time:time,events:events};
     postdata.dose=ID[my_index];
     postdata.index=my_index;
    }
-  G[my_index]=postID(url,postdata);
+   
+request('POST', url, {json: postdata})
+  .getBody()
+  .then(JSON.parse)
+  .done(function (res) {
+    G[my_index] = res.bg;
+    fs.writeFile("../glucosym/closed_loop_algorithm_samples/glucose_output_algo_bw.txt",G[my_index]);
+    //fs.appendFile('glucose_output_algo_bw.txt',G[my_index] +"\n");
+    console.log("Blood_glucose: "+G[my_index]);
+  });
 //}
 
-fs.writeFile("../glucosym/closed_loop_algorithm_samples/glucose_output_algo_bw.txt",G[my_index]);
-//fs.appendFile('glucose_output_algo_bw.txt',G[my_index] +"\n");
-console.log("Blood_glucose: "+G[my_index]);
+
 
 
 
@@ -114,6 +121,9 @@ function postID(url,postdata) {
     return false 
   }
 }
+
+
+
 
 function postonly(url,postdata) {
   try{
