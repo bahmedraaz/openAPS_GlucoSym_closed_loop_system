@@ -1,3 +1,4 @@
+import sys
 import json
 import datetime
 from subprocess import call
@@ -24,7 +25,7 @@ init_iob_pointer = 0
 unsafe_action_occurance = 0
 
 #Input to the algo_bw.js. algo_bw.js format all the info and send to glucosym server. An algorithm is running in glucosym server that calculated next glucose and send the value back.
-algo_input_list = {"index":0,"BGTarget":95,"sens":45,"deltat_v":20,"dia":4,"dt":5.0,"time":6000,"bioavail":6.0,"Vg":253.0,"IRss":1.3,"events":{"bolus":[{ "amt": 0.0, "start":0}],"basal":[{ "amt":0, "start":0,"length":0}],"carb":[{"amt":0.0,"start":0,"length":0},{"amt":0.0,"start":0,"length":0}]}}
+algo_input_list = {"index":0,"BGTarget":95,"sens":45,"deltat_v":20,"dia":4,"dt":5.0,"time":100000,"bioavail":6.0,"Vg":253.0,"IRss":1.3,"events":{"bolus":[{ "amt": 0.0, "start":0}],"basal":[{ "amt":0, "start":0,"length":0}],"carb":[{"amt":0.0,"start":0,"length":0},{"amt":0.0,"start":0,"length":0}]}}
 
 #write the algo_input_list to a file named algo_input.json so that algo_bw.js can read the input from that file
 with open("../glucosym/closed_loop_algorithm_samples/algo_input.json", "w") as write_algo_input_init:
@@ -35,7 +36,8 @@ with open("../glucosym/closed_loop_algorithm_samples/algo_input.json", "w") as w
 suggested_data_to_dump = {}
 list_suggested_data_to_dump = []
 
-iteration_num = 200
+#iteration_num = 5
+iteration_num = int(sys.argv[1])
 
 #record the time 5 minutes ago, we need this time to attach with the recent glucose value
 #time_5_minutes_back = ((time.time())*1000)-3000
@@ -67,9 +69,9 @@ for _ in range(iteration_num):
 
 	data_to_prepend["glucose"] = loaded_glucose 
 
-## Fault_injection ############# permanent hardware fault injection #################################	
-	if _ > 50:	 
-		data_to_prepend["glucose"] = 80
+# Fault_injection ############# permanent hardware fault injection #################################	
+	if _ > 5:	 
+		data_to_prepend["glucose"] = 60
 		fault_injected = fault_injected+1
 
 ################### End of permanent fault section #################

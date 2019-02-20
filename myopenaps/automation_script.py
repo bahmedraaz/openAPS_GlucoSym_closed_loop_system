@@ -1,3 +1,4 @@
+import sys
 from subprocess import call
 import time
 import os
@@ -5,9 +6,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 ##########################################################
-#initial_glucose = [80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320]
-initial_glucose = [80, 100, 120]
-cmd_main = 'python '+'updated_ct_script_iob_based.py'
+initial_glucose = [80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320]
+#initial_glucose = [80, 100, 120]
+cmd_main = 'python '+'updated_ct_script_iob_based.py '+sys.argv[1]
 browser = webdriver.Firefox()
 browser.get("http://localhost:3000/")
 input_text = browser.find_element_by_id("initialglucose")
