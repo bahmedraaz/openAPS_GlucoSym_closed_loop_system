@@ -44,7 +44,8 @@ for i in browser.find_elements_by_xpath("//*[@type='radio']"):
 			os.makedirs(directory)
 		
 		csv_file_name = 'data_'+patient+'_'+str(ig)+'.csv'
-		txt_file_name = 'confustion_matrix_'+str(ig)+'.txt'
+		cm_file_name = 'confustion_matrix_'+str(ig)+'.txt'
+		f1_file_name = 'f1_score_'+str(ig)+'.txt'
 		cmd_label_data = 'python '+'data_labeling_script.py'
 		os.system(cmd_label_data)
 		
@@ -57,11 +58,14 @@ for i in browser.find_elements_by_xpath("//*[@type='radio']"):
 		#print(conf_matrix)
 		#print(classification_report(y_true, y_pred))
 		
-		writeFile = open("confusion_matrix.txt", "w+")
-		#writeFile.write(classification_report(y_true, y_pred))
-		writeFile.write(np.array2string(confusion_matrix(y_true, y_pred)))
-		cmd_move_conf_matrix = 'mv '+'confusion_matrix.txt '+directory+'/'+txt_file_name
+		writeFile_CM = open("confusion_matrix.txt", "w+")
+		writeFile_F1 = open("f1_score.txt", "w+")
+		writeFile_CM.write(np.array2string(confusion_matrix(y_true, y_pred)))
+		writeFile_F1.write(classification_report(y_true, y_pred))
+		cmd_move_conf_matrix = 'mv '+'confusion_matrix.txt '+directory+'/'+cm_file_name
+		cmd_move_f1_score = 'mv '+'f1_score.txt '+directory+'/'+f1_file_name
 		os.system(cmd_move_conf_matrix)
+		os.system(cmd_move_f1_score)
 		
 		cmd_move_data = 'mv '+'labeled_data.csv '+directory+'/'+csv_file_name
 		os.system(cmd_move_data)
