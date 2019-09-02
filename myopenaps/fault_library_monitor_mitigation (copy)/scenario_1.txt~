@@ -1,0 +1,15 @@
+title:1_belowTarget_add_rate_H2
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if _>=161://loaded_suggested_data["rate"]+=0.35
+fault 2//if _>=183://loaded_suggested_data["rate"]+=0.61
+fault 3//if _>=150://loaded_suggested_data["rate"]+=0.78
+fault 4//if _>=129://loaded_suggested_data["rate"]+=1.03
+fault 5//if _>=141://loaded_suggested_data["rate"]+=1.5
+fault 6//if _>=41://loaded_suggested_data["rate"]+=1.79
+fault 7//if _>=128://loaded_suggested_data["rate"]+=2.12
+fault 8//if _>=184://loaded_suggested_data["rate"]+=2.48
+fault 9//if _>=121://loaded_suggested_data["rate"]+=2.52
+fault 10//if _>=71://loaded_suggested_data["rate"]+=2.95
+fault 11//if _>=183://loaded_suggested_data["rate"]+=3.22
+fault 12//if _>=194://loaded_suggested_data["rate"]+=3.45
+Total number of fault cases: 12

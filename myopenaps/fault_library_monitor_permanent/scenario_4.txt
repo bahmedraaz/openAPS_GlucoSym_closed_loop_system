@@ -1,0 +1,10 @@
+title:4_aboveTarget_stuck_rate_H1
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if _>=107://loaded_suggested_data["rate"]=0.014
+fault 2//if _>=44://loaded_suggested_data["rate"]=0.055
+fault 3//if _>=142://loaded_suggested_data["rate"]=0.074
+fault 4//if _>=143://loaded_suggested_data["rate"]=0.101
+fault 5//if _>=145://loaded_suggested_data["rate"]=0.123
+fault 6//if _>=125://loaded_suggested_data["rate"]=0.173
+fault 7//if _>=33://loaded_suggested_data["rate"]=0.202
+Total number of fault cases: 7

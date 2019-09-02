@@ -1,0 +1,10 @@
+title:5_belowTarget_add_glucose_H2
+location//updated_ct_script_iob_based.py//#glucose:HOOK#
+fault 1//if _>=49 and _<139://data_to_prepend["glucose"]=str(float(loaded_glucose)+17)
+fault 2//if _>=70 and _<92://data_to_prepend["glucose"]=str(float(loaded_glucose)+40)
+fault 3//if _>=132 and _<138://data_to_prepend["glucose"]=str(float(loaded_glucose)+99)
+fault 4//if _>=111 and _<119://data_to_prepend["glucose"]=str(float(loaded_glucose)+114)
+fault 5//if _>=31 and _<73://data_to_prepend["glucose"]=str(float(loaded_glucose)+149)
+fault 6//if _>=115 and _<190://data_to_prepend["glucose"]=str(float(loaded_glucose)+180)
+fault 7//if _>=146 and _<162://data_to_prepend["glucose"]=str(float(loaded_glucose)+206)
+Total number of fault cases: 7

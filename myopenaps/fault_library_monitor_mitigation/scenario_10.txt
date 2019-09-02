@@ -1,0 +1,6 @@
+title:10_bitflip_double_rate
+location//updated_ct_script_iob_based_mitigation.py//#rate:HOOK#
+fault 11//if _>=93 and _<169://loaded_suggested_data["rate"]=8*loaded_suggested_data["rate"]
+fault 12//if _>=93 and _<191://loaded_suggested_data["rate"]=8*loaded_suggested_data["rate"]
+fault 16//if _>=108 and _<195://loaded_suggested_data["rate"]=8*loaded_suggested_data["rate"]
+Total number of fault cases: 16

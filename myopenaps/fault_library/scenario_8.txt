@@ -1,0 +1,23 @@
+title:8_aboveTarget_stuck_glucose_H1
+location//updated_ct_script_iob_based.py//#glucose:HOOK#
+fault 1//if _>=82://data_to_prepend["glucose"]=str(30)
+fault 2//if _>=161://data_to_prepend["glucose"]=str(33)
+fault 3//if _>=80://data_to_prepend["glucose"]=str(35)
+fault 4//if _>=93://data_to_prepend["glucose"]=str(36)
+fault 5//if _>=23://data_to_prepend["glucose"]=str(39)
+fault 6//if _>=185://data_to_prepend["glucose"]=str(40)
+fault 7//if _>=165://data_to_prepend["glucose"]=str(43)
+fault 8//if _>=106://data_to_prepend["glucose"]=str(45)
+fault 9//if _>=180://data_to_prepend["glucose"]=str(46)
+fault 10//if _>=88://data_to_prepend["glucose"]=str(49)
+fault 11//if _>=176://data_to_prepend["glucose"]=str(50)
+fault 12//if _>=178://data_to_prepend["glucose"]=str(52)
+fault 13//if _>=27://data_to_prepend["glucose"]=str(54)
+fault 14//if _>=91://data_to_prepend["glucose"]=str(56)
+fault 15//if _>=74://data_to_prepend["glucose"]=str(59)
+fault 16//if _>=131://data_to_prepend["glucose"]=str(61)
+fault 17//if _>=20://data_to_prepend["glucose"]=str(62)
+fault 18//if _>=84://data_to_prepend["glucose"]=str(65)
+fault 19//if _>=45://data_to_prepend["glucose"]=str(66)
+fault 20//if _>=34://data_to_prepend["glucose"]=str(69)
+Total number of fault cases: 20

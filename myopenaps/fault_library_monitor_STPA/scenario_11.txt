@@ -1,0 +1,19 @@
+title:11_bitflip_half_rate
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 2//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 3//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 4//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 5//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 6//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 7//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 8//if xxxxx://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 9//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 10//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 11//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 12//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 13//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 14//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 15//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 16//if xxxxx://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+Total number of fault cases: 16

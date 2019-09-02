@@ -1,0 +1,15 @@
+title:1_belowTarget_add_rate_H2
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if glucose < bg_target://loaded_suggested_data["rate"]+=0.28
+fault 2//if glucose < bg_target://loaded_suggested_data["rate"]+=0.53
+fault 3//if glucose < bg_target://loaded_suggested_data["rate"]+=0.83
+fault 4//if glucose < bg_target://loaded_suggested_data["rate"]+=1.12
+fault 5//if glucose < bg_target://loaded_suggested_data["rate"]+=1.5
+fault 6//if glucose < bg_target://loaded_suggested_data["rate"]+=1.71
+fault 7//if glucose < bg_target://loaded_suggested_data["rate"]+=2.01
+fault 8//if glucose < bg_target://loaded_suggested_data["rate"]+=2.42
+fault 9//if glucose < bg_target://loaded_suggested_data["rate"]+=2.54
+fault 10//if glucose < bg_target://loaded_suggested_data["rate"]+=3.06
+fault 11//if glucose < bg_target://loaded_suggested_data["rate"]+=3.14
+fault 12//if glucose < bg_target://loaded_suggested_data["rate"]+=3.59
+Total number of fault cases: 12

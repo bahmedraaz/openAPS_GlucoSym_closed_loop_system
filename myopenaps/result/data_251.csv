@@ -1,0 +1,2 @@
+bg,eq_BG,CGM_glucose,IOB,rate,running_temp,unsafe_action_reason
+100,105,100.0,-0.1,0.25,0,Null

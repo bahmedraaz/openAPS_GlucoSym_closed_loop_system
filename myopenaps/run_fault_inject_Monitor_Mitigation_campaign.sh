@@ -1,0 +1,19 @@
+#Usage: python run_openAPS_monitor.py fault_library_monitor_mitigation
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_1
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_2
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_3
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_4
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_5
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_6
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_7
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_8
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_9
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_14
+python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_12
+python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_13
+python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_16
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_17
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_15
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_10
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_11
+# python run_openAPS_monitor.py fault_library_monitor_mitigation/scenario_18

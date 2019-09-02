@@ -1,0 +1,11 @@
+#Usage: python run_openAPS.py target_fault_library_monitor
+python run_openAPS.py fault_library_monitor_STPA/scenario_9
+python run_openAPS.py fault_library_monitor_STPA/scenario_10
+python run_openAPS.py fault_library_monitor_STPA/scenario_11
+python run_openAPS.py fault_library_monitor_STPA/scenario_12
+python run_openAPS.py fault_library_monitor_STPA/scenario_13
+python run_openAPS.py fault_library_monitor_STPA/scenario_14
+python run_openAPS.py fault_library_monitor_STPA/scenario_15
+python run_openAPS.py fault_library_monitor_STPA/scenario_16
+python run_openAPS.py fault_library_monitor_STPA/scenario_17
+python run_openAPS.py fault_library_monitor_STPA/scenario_18

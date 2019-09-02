@@ -1,0 +1,11 @@
+title:15_bitflip_double_glucose
+location//updated_ct_script_iob_based.py//#glucose:HOOK#
+fault 1//if _>=51 and _<77://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 2//if _>=51 and _<118://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 3//if _>=51 and _<151://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 4//if _>=51 and _<168://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 5//if _>=170 and _<171://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 6//if _>=170 and _<181://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 7//if _>=170 and _<191://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+fault 8//if _>=170 and _<196://data_to_prepend["glucose"]=2*data_to_prepend["glucose"]
+Total number of fault cases: 8

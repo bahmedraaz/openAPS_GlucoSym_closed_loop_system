@@ -1,0 +1,15 @@
+title:3_aboveTarget_sub_rate_H1
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if glucose > bg_target://loaded_suggested_data["rate"]-=0.16//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 2//if glucose > bg_target://loaded_suggested_data["rate"]-=0.67//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 3//if glucose > bg_target://loaded_suggested_data["rate"]-=0.74//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 4//if glucose > bg_target://loaded_suggested_data["rate"]-=1.21//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 5//if glucose > bg_target://loaded_suggested_data["rate"]-=1.44//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 6//if glucose > bg_target://loaded_suggested_data["rate"]-=1.61//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 7//if glucose > bg_target://loaded_suggested_data["rate"]-=2.14//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 8//if glucose > bg_target://loaded_suggested_data["rate"]-=2.47//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 9//if glucose > bg_target://loaded_suggested_data["rate"]-=2.65//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 10//if glucose > bg_target://loaded_suggested_data["rate"]-=3.0//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 11//if glucose > bg_target://loaded_suggested_data["rate"]-=3.33//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+fault 12//if glucose > bg_target://loaded_suggested_data["rate"]-=3.42//if loaded_suggested_data["rate"]<0://  loaded_suggested_data["rate"]= 0
+Total number of fault cases: 12

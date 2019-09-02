@@ -1,0 +1,11 @@
+title:14_lostconnection_hold_glucose
+location//updated_ct_script_iob_based.py//#glucose:HOOK#
+fault 1//if xxxxx://glucose_refresh=0
+fault 2//if xxxxx://glucose_refresh=0
+fault 3//if xxxxx://glucose_refresh=0
+fault 4//if xxxxx://glucose_refresh=0
+fault 5//if xxxxx://glucose_refresh=0
+fault 6//if xxxxx://glucose_refresh=0
+fault 7//if xxxxx://glucose_refresh=0
+fault 8//if xxxxx://glucose_refresh=0
+Total number of fault cases: 8

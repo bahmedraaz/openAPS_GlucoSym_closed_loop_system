@@ -1,0 +1,19 @@
+title:11_bitflip_half_rate
+location//updated_ct_script_iob_based.py//#rate:HOOK#
+fault 1//if _>=59 and _<85://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 2//if _>=59 and _<126://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 3//if _>=59 and _<157://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 4//if _>=59 and _<181://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 5//if _>=135 and _<141://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 6//if _>=135 and _<165://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 7//if _>=135 and _<181://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 8//if _>=135 and _<198://loaded_suggested_data["rate"]=0.25*loaded_suggested_data["rate"]
+fault 9//if _>=59 and _<90://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 10//if _>=59 and _<122://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 11//if _>=59 and _<155://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 12//if _>=59 and _<187://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 13//if _>=108 and _<113://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 14//if _>=108 and _<145://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 15//if _>=108 and _<174://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+fault 16//if _>=108 and _<191://loaded_suggested_data["rate"]=0.125*loaded_suggested_data["rate"]
+Total number of fault cases: 16
